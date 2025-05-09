@@ -33,7 +33,7 @@ namespace Abilities
         /// <param name="abilityName"></param>
         /// <param name="cooldownDuration"></param>
         /// <param name="damage"></param>
-        void Initialize(string abilityName, float cooldownDuration, float damage);
+        void Initialize(string abilityName, float cooldownDuration, float damage, bool isHeal = false);
         
         /// <summary>
         /// Attempts to activate the ability.

@@ -55,7 +55,7 @@ namespace Abilities
         /// <param name="cooldownDuration"></param>
         /// <param name="damage"></param>
         /// <exception cref="ArgumentException">If the ability name is null</exception>
-        public void Initialize(string abilityName, float cooldownDuration, float damage)
+        public virtual void Initialize(string abilityName, float cooldownDuration, float damage, bool isHeal = false)
         {
             if (string.IsNullOrEmpty(abilityName))
             {
